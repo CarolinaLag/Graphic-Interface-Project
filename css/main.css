@@ -160,8 +160,7 @@ body {
 
 .hero-container {
   font-family: "Sanchez", serif;
-  /* background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/carbeach.jpg'); */
-  background-image: url("../images/beachedited.png");
+  background-image: url("../images/bg-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -203,15 +202,23 @@ body {
 .iconText {
   color: #0a4682;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px;
 }
 
 .boatIconText {
   color: #0a4682;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 10px;
+}
+
+.carDiv {
+  padding-top: 22px;
+}
+
+.boatDiv {
+  padding-top: 43px;
 }
 
 .boatTravelSection {
