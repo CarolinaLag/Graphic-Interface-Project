@@ -2,277 +2,186 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Sanchez", serif;
-}
+  font-family: "Sanchez", serif; }
 
 body {
-  overflow-x: hidden;
-}
-
-.logotyp {
-  display: inline-block;
-  padding: 30px 20px 20px 60px;
-}
-
-.folksamLogo {
-  /* line-height: 3.4375rem;
-    font-size: 1.3125rem; */
-  /* color: #007AC4;
-    text-decoration: none;
-    font-weight: bold; */
-  width: 30%;
-}
-
-.inputButtonSection {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-
-.searchInput {
-  padding: 10px;
-  background-color: #c8e6fa;
-  border-radius: 25px;
-  border: solid 1px;
-  margin: 5px;
-  font-weight: bold;
-}
-
-.searchInput::placeholder {
-  color: #007ac4;
-}
-
-.loginBtn {
-  padding: 10px;
-  background-color: #0093de;
-  border-radius: 25px;
-  border: solid 1px;
-  margin: 5px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.loginBtn:hover {
-  background-color: #00aae6;
-}
-
-.far {
-  padding: 2px;
-}
-
-.menuListLink {
-  text-decoration: none !important;
-  color: #009fe4;
-  transition: color 0.3s ease;
-}
-
-.menuListLink:hover {
-  color: #7dc8f0;
-}
-
-.menuToggle {
-  display: block;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-  -webkit-touch-callout: none;
-}
-
-.menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #009fe4;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-.menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-.menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-.menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #009fe4;
-}
-
-.menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.menuToggle input:checked ~ span:nth-last-child(2) {
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-.menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -100px;
-  background: #f2eee6;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-.menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-.menuToggle input:checked ~ ul {
-  transform: scale(1, 1);
-  opacity: 1;
-}
-
-.hero-container {
-  font-family: "Sanchez", serif;
-  background-image: url("../images/bg-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-}
-
-.carHouseSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 50px;
-}
-
-.carDiv,
-.houseDiv {
-  padding: 10px;
-}
-
-.mainHeading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.mainText {
-  color: #e6007e;
-  font-size: 1.5rem;
-  text-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
-  padding: 10px;
-  text-align: center;
-}
-
-.iconImage {
-  width: 50%;
-  margin: 10px;
-}
-
-.iconText {
-  color: #0a4682;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px;
-}
-
-.boatIconText {
-  color: #0a4682;
-  font-weight: bold;
-  font-size: 1rem;
-  padding-top: 10px;
-}
-
-.carDiv {
-  padding-top: 22px;
-}
-
-.boatDiv {
-  padding-top: 43px;
-}
-
-.boatTravelSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 25px;
-}
-
-.insuranceBtnSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.insuranceBtn {
-  padding: 15px;
-  background-color: #c9dc18;
-  border-radius: 25px;
-  color: #1e6e32;
-  cursor: pointer;
-  font-weight: bold;
-  border: none;
-}
-
-.insuranceBtn:hover {
-  background-color: #d2e182;
-}
-
-@media screen and (min-width: 1024px) {
-  .inputButtonSection {
+  overflow-x: hidden; }
+  body header .logotyp {
     display: inline-block;
+    padding: 30px 20px 20px 60px; }
+    body header .logotyp .folksamLogo {
+      width: 40%; }
+      @media screen and (min-width: 1024px) {
+        body header .logotyp .folksamLogo {
+          width: 18%; } }
+  body header .inputButtonSection {
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    flex-direction: row;
-    align-items: center;
-  }
-  .folksamLogo {
-    /* line-height: 4.75rem;
-        font-size: 2.1875rem;
-        margin-right: 2rem; */
-    width: 45%;
-  }
-  .mainHeading {
-    padding: 0;
-  }
-  .mainText {
-    font-size: 2rem;
-    padding: 0;
-  }
-}
-
-/* @media only screen and (min-width: 768px) {
-    .hero-section {
-        height: 100vh;
-    } */
+    padding: 10px; }
+    @media screen and (min-width: 1024px) {
+      body header .inputButtonSection {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    body header .inputButtonSection .searchInput {
+      padding: 10px;
+      background-color: #c8e6fa;
+      border-radius: 25px;
+      border: solid 1px;
+      margin: 5px;
+      font-weight: bold; }
+      body header .inputButtonSection .searchInput::placeholder {
+        color: #007ac4; }
+    body header .inputButtonSection .loginBtn {
+      padding: 10px;
+      background-color: #0093de;
+      border-radius: 25px;
+      border: solid 1px;
+      margin: 5px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold; }
+      body header .inputButtonSection .loginBtn:hover {
+        background-color: #00aae6; }
+      body header .inputButtonSection .loginBtn .far {
+        padding: 2px; }
+  body nav .menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none; }
+  body nav .menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none; }
+  body nav .menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #009fe4;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  body nav .menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+  body nav .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+  body nav .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #009fe4; }
+  body nav .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  body nav .menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px); }
+  body nav .menuToggle input:checked ~ ul {
+    transform: scale(1, 1);
+    opacity: 1; }
+  body nav .menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: #f2eee6;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  body nav .menu li {
+    padding: 10px 0;
+    font-size: 22px; }
+  body nav .menuListLink {
+    text-decoration: none !important;
+    color: #009fe4;
+    transition: color 0.3s ease; }
+    body nav .menuListLink:hover {
+      color: #7dc8f0; }
+  body .hero-container {
+    font-family: "Sanchez", serif;
+    background-image: url("../images/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 100%; }
+    body .hero-container .iconImage {
+      width: 50%;
+      margin: 20px 20px 20px 30px; }
+    body .hero-container .iconText {
+      color: #0a4682;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px;
+      background-color: #7dc8f0;
+      border-radius: 25px;
+      margin: 10px;
+      text-align: center; }
+      @media screen and (min-width: 1024px) {
+        body .hero-container .iconText {
+          font-size: 1.2rem; } }
+    body .hero-container .carHouseSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 50px; }
+      body .hero-container .carHouseSection .carDiv {
+        padding: 22px 10px 10px 10px; }
+      body .hero-container .carHouseSection .houseDiv {
+        padding: 10px; }
+    body .hero-container .mainHeading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px; }
+      @media screen and (min-width: 1024px) {
+        body .hero-container .mainHeading {
+          padding: 0; } }
+      body .hero-container .mainHeading .mainText {
+        color: #e6007e;
+        font-size: 1.5rem;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        padding: 10px 10px 70px 10px;
+        text-align: center; }
+        @media screen and (min-width: 1024px) {
+          body .hero-container .mainHeading .mainText {
+            font-size: 2rem;
+            padding: 10px 10px 90px 10px; } }
+    body .hero-container .boatTravelSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 25px; }
+      body .hero-container .boatTravelSection .boatDiv {
+        padding-top: 54px; }
+    body .hero-container .insuranceBtnSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 20px 50px 20px; }
+      body .hero-container .insuranceBtnSection .insuranceBtn {
+        padding: 15px;
+        background-color: #c9dc18;
+        border-radius: 25px;
+        color: #1e6e32;
+        cursor: pointer;
+        font-weight: bold;
+        border: none; }
+        body .hero-container .insuranceBtnSection .insuranceBtn:hover {
+          background-color: #d2e182; }
