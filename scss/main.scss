@@ -170,6 +170,7 @@ body {
         border-radius: 25px;
         margin: 10px;
         text-align: center;
+        width: 85%;
           @include desktop {
               font-size: 1.2rem;
           }
@@ -180,11 +181,31 @@ body {
       justify-content: space-evenly;
       padding: 50px;
       .carDiv {
-        padding: 22px 10px 10px 10px;
-        // padding-top: 22px;
+        padding: 57px 10px 10px 10px;
+        @include desktop {
+          margin-left: 180px;
+        }
       }
       .houseDiv {
         padding: 10px;
+        @include desktop {
+          margin-left: 155px;
+        }
+        #homeInsurance {
+          @include desktop {
+           width: 50%;
+           margin-left: 23px;
+          }
+         }
+        #house {
+         width: 40%;
+         margin-left: 52px;
+         @include desktop {
+           width: 30%;
+           margin-bottom: 7px;
+         }
+        
+        }
       }
     }
     .mainHeading {
@@ -198,8 +219,8 @@ body {
       .mainText {
         color: #e6007e;
         font-size: 1.5rem;
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-        padding: 10px 10px 70px 10px;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 10px 10px 96px 10px;
         text-align: center;
         @include desktop {
             font-size: 2rem;
@@ -212,9 +233,18 @@ body {
       flex-direction: row;
       justify-content: space-evenly;
       padding: 25px;
+      .travelDiv {
+        padding-top: 3px;
+        #parasoll {
+          width: 45%;
+          margin-left: 56px;
+        }
+      }
       .boatDiv {
         padding-top: 54px;
-        
+        #boat {
+          margin-left: 35px;
+        }
       }
       
     }
@@ -231,8 +261,12 @@ body {
             cursor: pointer;
             font-weight: bold;
             border: none;
+            font-size: 1rem;
             &:hover {
                 background-color: #d2e182;
+            }
+            @include desktop {
+              font-size: 1.2rem;
             }
           }
       }
