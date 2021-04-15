@@ -38,7 +38,7 @@ body {
 
       .loginBtn {
         padding: 10px;
-        background-color: #0093de;
+        background-color: rgb(0, 122, 196);
         border-radius: 25px;
         border: solid 1px;
         margin: 5px;
@@ -103,7 +103,7 @@ body {
     .menuToggle input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
-      background: #009fe4;
+      background: rgb(255, 255, 255);
     }
 
     .menuToggle input:checked ~ span:nth-last-child(3) {
@@ -128,7 +128,7 @@ body {
       padding: 50px;
       padding-top: 125px;
       right: -100px;
-      background: #f2eee6;
+      background: #0A4682;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
@@ -143,10 +143,10 @@ body {
 
     .menuListLink {
       text-decoration: none !important;
-      color: #009fe4;
+      color: rgb(255, 255, 255);
       transition: color 0.3s ease;
       &:hover {
-        color: #7dc8f0;
+        color: #7DC8F0;
       }
     }
   }
@@ -272,5 +272,11 @@ body {
       }
   }
 }
+
+  @media (prefers-reduced-motion) {
+    .iconImage {
+      animation-name: dissolve;
+    }
+  }
 
   

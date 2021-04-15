@@ -34,7 +34,7 @@ body {
         color: #007ac4; }
     body header .inputButtonSection .loginBtn {
       padding: 10px;
-      background-color: #0093de;
+      background-color: #007ac4;
       border-radius: 25px;
       border: solid 1px;
       margin: 5px;
@@ -82,7 +82,7 @@ body {
   body nav .menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #009fe4; }
+    background: white; }
   body nav .menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2); }
@@ -99,7 +99,7 @@ body {
     padding: 50px;
     padding-top: 125px;
     right: -100px;
-    background: #f2eee6;
+    background: #0A4682;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -110,10 +110,10 @@ body {
     font-size: 22px; }
   body nav .menuListLink {
     text-decoration: none !important;
-    color: #009fe4;
+    color: white;
     transition: color 0.3s ease; }
     body nav .menuListLink:hover {
-      color: #7dc8f0; }
+      color: #7DC8F0; }
   body .hero-container {
     font-family: "Sanchez", serif;
     background-image: url("../images/bg-image.jpg");
@@ -214,3 +214,7 @@ body {
         @media screen and (min-width: 1024px) {
           body .hero-container .insuranceBtnSection .insuranceBtn {
             font-size: 1.2rem; } }
+
+@media (prefers-reduced-motion) {
+  .iconImage {
+    animation-name: dissolve; } }

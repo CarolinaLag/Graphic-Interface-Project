@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Folksam</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    
+
     <link rel="stylesheet" href="./css/main.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -28,12 +28,16 @@
   <body>
     <header>
       <div class="logotyp">
-        <a href="#index.html" class="folksamLogo"
-          ><img class="folksamLogo" src="images/folksam-logo.png"
-        /></a>
+        <img
+          class="folksamLogo"
+          tabindex="0"
+          alt="image of folksam logo"
+          src="images/folksam-logo.png"
+        />
       </div>
       <div class="inputButtonSection">
         <div class="inputDiv">
+          <label for="search">Sök</label>
           <input class="searchInput" typ="text" placeholder="Sök" />
         </div>
         <div class="buttonDiv">
@@ -67,78 +71,184 @@
             </a>
           </ul>
         </div>
-      </nav>
+      </nav> 
     </header>
 
     <div class="hero-container">
       <div class="carHouseSection">
         <div class="carDiv">
-          <img class="iconImage" id="car" src="images/car-icon.png" , />
+          <img
+            class="iconImage"
+            id="car"
+            src="images/car-icon.png"
+            alt="image of car icon"
+          />
           <p tabindex="0" class="iconText">Bilförsäkring</p>
         </div>
         <div class="houseDiv">
           <!-- <img class="iconImage" id="house" src="images/house-icon.png" /> -->
-          <svg class="iconImage" id="house"  version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
-<g id="Lager_3">
-	<g>
-		<g>
-			<path fill="#FBB814" d="M202.9,218.4c-1.6,0.8-3,1.9-3.9,3.1l-90.5,127.3L18,476.2c-1.7,2.3-3,6.6-3,9.5v219.9
-				c0,2.9,2.4,5.2,5.2,5.2H384c1.4,0,3.3,0,5.2,0V480.5L202.9,218.4z"/>
-			<path fill="#FFFFFF" class="window" d="M118.1,631.8c0,1.3-1,2.3-2.3,2.3H86.1c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M118.1,582.1c0,1.3-1,2.3-2.3,2.3H86.1c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-			<path fill="#FFFFFF" class="window" d="M167.8,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M167.8,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-			<path fill="#FFFFFF" class="window" d="M194.4,482c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V482z"/>
-			<path fill="#FFFFFF" class="window" d="M194.4,432.3c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V432.3z"/>
-			<path fill="#FFFFFF" class="window" d="M209.8,402.7c0-1.3,1-2.3,2.3-2.3h29.6c1.3,0,2.3,1,2.3,2.3v29.6c0,1.3-1,2.3-2.3,2.3h-29.6
-				c-1.3,0-2.3-1-2.3-2.3V402.7z"/>
-			<path fill="#FFFFFF" class="window" d="M209.8,482v-29.6c0-1.3,1-2.3,2.3-2.3h29.6c1.3,0,2.3,1,2.3,2.3V482c0,1.3-1,2.3-2.3,2.3h-29.6
-				C210.9,484.3,209.8,483.2,209.8,482z"/>
-			<path fill="#FFFFFF" class="window" d="M270.7,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M270.7,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-			<path fill="#FFFFFF" class="window" d="M320.4,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M320.4,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-		</g>
-		<g>
-			<path fill="#9A4A17" d="M488.3,480.5c2.9,0,6.6-1.9,8.3-4.3l87.5-123.1c1.7-2.4,4.4-2.4,6.1,0l87.5,123.1
+          <svg
+            class="iconImage"
+            id="house"
+            alt="image of house icon"
+            version="1.1"
+            id="Lager_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 800 800"
+            enable-background="new 0 0 800 800"
+            xml:space="preserve"
+          >
+            <g id="Lager_3">
+              <g>
+                <g>
+                  <path
+                    fill="#FBB814"
+                    d="M202.9,218.4c-1.6,0.8-3,1.9-3.9,3.1l-90.5,127.3L18,476.2c-1.7,2.3-3,6.6-3,9.5v219.9
+				c0,2.9,2.4,5.2,5.2,5.2H384c1.4,0,3.3,0,5.2,0V480.5L202.9,218.4z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M118.1,631.8c0,1.3-1,2.3-2.3,2.3H86.1c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M118.1,582.1c0,1.3-1,2.3-2.3,2.3H86.1c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M167.8,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M167.8,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M194.4,482c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V482z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M194.4,432.3c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V432.3z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M209.8,402.7c0-1.3,1-2.3,2.3-2.3h29.6c1.3,0,2.3,1,2.3,2.3v29.6c0,1.3-1,2.3-2.3,2.3h-29.6
+				c-1.3,0-2.3-1-2.3-2.3V402.7z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M209.8,482v-29.6c0-1.3,1-2.3,2.3-2.3h29.6c1.3,0,2.3,1,2.3,2.3V482c0,1.3-1,2.3-2.3,2.3h-29.6
+				C210.9,484.3,209.8,483.2,209.8,482z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M270.7,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M270.7,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M320.4,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M320.4,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                </g>
+                <g>
+                  <path
+                    fill="#9A4A17"
+                    d="M488.3,480.5c2.9,0,6.6-1.9,8.3-4.3l87.5-123.1c1.7-2.4,4.4-2.4,6.1,0l87.5,123.1
 				c1.7,2.3,5.4,4.3,8.3,4.3h39.3H784c-0.5-1.6-1.2-3.2-2-4.3l-90.5-127.4l-90.5-127.3c-1.7-2.3-5.4-4.3-8.3-4.3H207.3
-				c-1.4,0-2.9,0.5-4.4,1.2l186.3,262.1h64.9H488.3z"/>
-		</g>
-		<g>
-			<path fill="#FFE680" d="M784,480.5h-58.8h-39.3c-2.9,0-6.6-1.9-8.3-4.3l-87.5-123.1c-1.7-2.4-4.4-2.4-6.1,0l-87.5,123.1
+				c-1.4,0-2.9,0.5-4.4,1.2l186.3,262.1h64.9H488.3z"
+                  />
+                </g>
+                <g>
+                  <path
+                    fill="#FFE680"
+                    d="M784,480.5h-58.8h-39.3c-2.9,0-6.6-1.9-8.3-4.3l-87.5-123.1c-1.7-2.4-4.4-2.4-6.1,0l-87.5,123.1
 				c-1.7,2.3-5.4,4.3-8.3,4.3h-34.2h-64.9v230.3c1.9,0,3.8,0,5.2,0h385.3c2.9,0,5.2-2.4,5.2-5.2V485.7
-				C785,484.2,784.6,482.3,784,480.5z"/>
-			<path fill="#FFFFFF" class="window" d="M503.1,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M503.1,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-			<path fill="#FFFFFF" class="window" d="M552.8,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M552.8,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-			<path fill="#FFFFFF" class="window" d="M655.7,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M655.7,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-			<path fill="#FFFFFF" class="window" d="M705.4,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1.1,2.3,2.3V631.8z"/>
-			<path fill="#FFFFFF" class="window" d="M705.4,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
-				c1.3,0,2.3,1,2.3,2.3V582.1z"/>
-		</g>
-	</g>
-</g>
-</svg>
+				C785,484.2,784.6,482.3,784,480.5z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M503.1,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M503.1,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M552.8,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M552.8,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M655.7,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M655.7,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M705.4,631.8c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1.1,2.3,2.3V631.8z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    class="window"
+                    d="M705.4,582.1c0,1.3-1,2.3-2.3,2.3h-29.6c-1.3,0-2.3-1-2.3-2.3v-29.6c0-1.3,1-2.3,2.3-2.3h29.6
+				c1.3,0,2.3,1,2.3,2.3V582.1z"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
 
           <p tabindex="0" class="iconText" id="homeInsurance">Hemförsäkring</p>
         </div>
@@ -150,11 +260,21 @@
       </div>
       <div class="boatTravelSection">
         <div class="boatDiv">
-          <img class="iconImage" id="boat" src="images/boat-icon.png" />
+          <img
+            class="iconImage"
+            id="boat"
+            alt="image of boat icon"
+            src="images/boat-icon.png"
+          />
           <p tabindex="0" class="iconText">Båtförsäkring</p>
         </div>
         <div class="travelDiv">
-          <img class="iconImage" id="parasoll" src="images/parasoll-icon.png" />
+          <img
+            class="iconImage"
+            id="parasoll"
+            alt="image of parasoll icon"
+            src="images/parasoll-icon.png"
+          />
           <p tabindex="0" class="iconText">Reseförsäkring</p>
         </div>
       </div>
