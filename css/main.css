@@ -99,7 +99,7 @@ body {
     padding: 50px;
     padding-top: 125px;
     right: -100px;
-    background: #0A4682;
+    background: #0a4682;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -113,7 +113,7 @@ body {
     color: white;
     transition: color 0.3s ease; }
     body nav .menuListLink:hover {
-      color: #7DC8F0; }
+      color: #7dc8f0; }
   body .hero-container {
     font-family: "Sanchez", serif;
     background-image: url("../images/bg-image.jpg");
@@ -143,7 +143,17 @@ body {
       justify-content: space-evenly;
       padding: 50px; }
       body .hero-container .carHouseSection .carDiv {
-        padding: 57px 10px 10px 10px; }
+        padding: 45px 10px 10px 10px; }
+        @media screen and (min-width: 1024px) {
+          body .hero-container .carHouseSection .carDiv {
+            padding: 57px 10px 10px 10px; } }
+        body .hero-container .carHouseSection .carDiv #car {
+          width: 65%;
+          margin: 20px 20px 20px 16px; }
+          @media screen and (min-width: 1024px) {
+            body .hero-container .carHouseSection .carDiv #car {
+              margin: 20px 20px 20px 30px;
+              width: 50%; } }
         @media screen and (min-width: 1024px) {
           body .hero-container .carHouseSection .carDiv {
             margin-left: 180px; } }
@@ -215,6 +225,12 @@ body {
           body .hero-container .insuranceBtnSection .insuranceBtn {
             font-size: 1.2rem; } }
 
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: reduce) {
   .iconImage {
-    animation-name: dissolve; } }
+    animation: none; } }
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: black; }
+  .hero-container {
+    filter: brightness(50%); } }
