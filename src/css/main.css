@@ -70,18 +70,18 @@ body {
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-  body nav .menuToggle span:first-child {
+  body nav .menuToggle rect:first-child {
     transform-origin: 0% 0%; }
-  body nav .menuToggle span:nth-last-child(2) {
+  body nav .menuToggle rect:nth-last-child(2) {
     transform-origin: 0% 100%; }
-  body nav .menuToggle input:checked ~ span {
+  body nav .menuToggle input:checked ~ rect {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: white; }
-  body nav .menuToggle input:checked ~ span:nth-last-child(3) {
+  body nav .menuToggle input:checked ~ rect:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2); }
-  body nav .menuToggle input:checked ~ span:nth-last-child(2) {
+  body nav .menuToggle input:checked ~ rect:nth-last-child(2) {
     opacity: 1;
     transform: rotate(-45deg) translate(0, -1px); }
   body nav .menuToggle input:checked ~ ul {
@@ -111,7 +111,7 @@ body {
       color: #7dc8f0; }
   body .hero-container {
     font-family: "Sanchez", serif;
-    background-image: url("../images/bg-image.jpg");
+    background-image: url("/public/bg-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -139,6 +139,8 @@ body {
           border-radius: 25px;
           text-align: center;
           text-decoration: none; }
+          body .hero-container .iconSection .iconDiv .iconText:hover {
+            background-color: #009FE4; }
           @media screen and (min-width: 1024px) {
             body .hero-container .iconSection .iconDiv .iconText {
               font-size: 1.2rem; } }
