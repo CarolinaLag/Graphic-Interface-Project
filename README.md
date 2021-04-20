@@ -55,7 +55,7 @@ npm i
 
 ```
 Project root
-├── dist/html/css/js/
+├── dist/css/js/index.html
 ├    └── minified html, css and javascript-files
 ├── public
 ├    └── image-files and index.html
