@@ -19,31 +19,48 @@ body {
       display: flex;
       justify-content: center;
       padding: 10px;
+      font-size: 0.875rem;
+      label {
+        color: #007AC4;
+        font-size: 1rem;
+        font-weight: 600;
+        @include desktop {
+          font-size: 1rem;
+        }
+      }
       .searchInput {
-        padding: 10px;
+        padding: 0.375rem 1.5rem 0.375rem;
+        width: 150px;
+        line-height: 1.3125rem;
         background-color: #c8e6fa;
         border-radius: 25px;
         border: solid 1px;
         margin: 5px;
-        font-weight: bold;
+        font-weight: 600;
+        font-size: 0.875rem;
+        text-align: center;
         &::placeholder {
           color: #007ac4;
         }
+        @include desktop {
+          font-size: 1rem;
+        }
       }
       .loginBtn {
-        padding: 10px;
+        padding: 0.375rem 1.5rem 0.375rem;
         background-color: rgb(0, 122, 196);
         border-radius: 25px;
         border: solid 1px;
+        line-height: 1.3125rem;
         margin: 5px;
         color: white;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 600;
         &:hover {
           background-color: #00aae6;
         }
-        .far {
-          padding: 2px;
+        @include desktop {
+          font-size: 1rem;
         }
       }
     }
@@ -57,6 +74,9 @@ body {
       z-index: 1;
       -webkit-user-select: none;
       user-select: none;
+      .hamburgerIcon {
+        cursor: pointer;
+      }
     }
   }
   .hero-container {
@@ -77,15 +97,15 @@ body {
         flex-direction: column;
         align-items: center;
         .iconImage {
-          width: 100px;
-          height: 100px;
+          width: 120px;
+          height: 120px;
           object-fit: contain;
         }
         .iconText {
           color: rgb(255, 255, 255);
-          font-weight: bold;
-          font-size: 1rem;
-          padding: 10px;
+          font-weight: 600;
+          font-size: 1.125rem;
+          padding: 0.375rem 1.875rem 0.4375rem;
           background-color: rgb(0, 122, 196);
           border-radius: 25px;
           text-align: center;
@@ -94,7 +114,8 @@ body {
             background-color: #009FE4;
           }
           @include desktop {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
+            padding: 0.4375rem 2.5rem 0.5rem;
           }
         }
       }
@@ -103,17 +124,15 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px;
-      @include desktop {
-        padding: 0;
-      }
+      padding-bottom: 20px;
       .mainText {
         color: #e6007e;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         text-align: center;
+        line-height: 1.35;
         @include desktop {
-          font-size: 2rem;
+          font-size: 2.6rem;
         }
       }
     }
@@ -123,19 +142,20 @@ body {
       align-items: center;
       padding: 20px 20px 50px 20px;
       .insuranceBtn {
-        padding: 15px;
+        padding: 0.375rem 1.875rem 0.4375rem;
         background-color: #c9dc18;
         border-radius: 25px;
         color: rgb(50, 99, 33);
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 600;
         border: none;
-        font-size: 1rem;
+        font-size: 1.125rem;
         &:hover {
           background-color: #d2e182;
         }
         @include desktop {
-          font-size: 1.2rem;
+          font-size: 1.25rem;
+          padding: 0.4375rem 2.5rem 0.5rem;
         }
       }
     }
