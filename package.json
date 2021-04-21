@@ -1,0 +1,29 @@
+{
+  "name": "Summer-Campaign-Folksam",
+  "version": "1.0.0",
+  "description": "_A graphical interface design assignment to follow the graphical guidelines of Folksam and create a campaign page for the summer_",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-minify": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolinaLag/Graphic-Interface-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolinaLag/Graphic-Interface-Project/issues"
+  },
+  "homepage": "https://github.com/CarolinaLag/Graphic-Interface-Project#readme"
+}
