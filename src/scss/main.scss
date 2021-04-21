@@ -1,13 +1,16 @@
 @import "./partials/reset";
 @import "./partials/mixins";
-@import "./partials/variables";
 
 body {
   overflow-x: hidden;
+  font-family: "Sanchez", serif;
   header {
     .logotyp {
       display: inline-block;
-      padding: 30px 20px 20px 60px;
+      padding: 0;
+      @include desktop {
+        padding-left: 6rem;
+      }
       .folksamLogo {
         width: 40%;
         @include desktop {
@@ -21,7 +24,7 @@ body {
       padding: 10px;
       font-size: 0.875rem;
       label {
-        color: #007AC4;
+        color: #007ac4;
         font-size: 1rem;
         font-weight: 600;
         @include desktop {
@@ -69,11 +72,14 @@ body {
     .menu {
       display: block;
       position: absolute;
-      top: 50px;
+      top: 31px;
       right: 50px;
       z-index: 1;
       -webkit-user-select: none;
       user-select: none;
+      @include desktop {
+        top: 50px;
+      }
       .hamburgerIcon {
         cursor: pointer;
       }
@@ -111,7 +117,7 @@ body {
           text-align: center;
           text-decoration: none;
           &:hover {
-            background-color: #009FE4;
+            background-color: #009fe4;
           }
           @include desktop {
             font-size: 1.25rem;

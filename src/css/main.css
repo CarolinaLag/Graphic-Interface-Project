@@ -1,14 +1,17 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Sanchez", serif; }
+  box-sizing: border-box; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Sanchez", serif; }
   body header .logotyp {
     display: inline-block;
-    padding: 30px 20px 20px 60px; }
+    padding: 0; }
+    @media screen and (min-width: 1024px) {
+      body header .logotyp {
+        padding-left: 6rem; } }
     body header .logotyp .folksamLogo {
       width: 40%; }
       @media screen and (min-width: 1024px) {
@@ -20,7 +23,7 @@ body {
     padding: 10px;
     font-size: 0.875rem; }
     body header .inputButtonSection label {
-      color: #007AC4;
+      color: #007ac4;
       font-size: 1rem;
       font-weight: 600; }
       @media screen and (min-width: 1024px) {
@@ -60,11 +63,14 @@ body {
   body nav .menu {
     display: block;
     position: absolute;
-    top: 50px;
+    top: 31px;
     right: 50px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none; }
+    @media screen and (min-width: 1024px) {
+      body nav .menu {
+        top: 50px; } }
     body nav .menu .hamburgerIcon {
       cursor: pointer; }
   body .hero-container {
@@ -98,7 +104,7 @@ body {
           text-align: center;
           text-decoration: none; }
           body .hero-container .iconSection .iconDiv .iconText:hover {
-            background-color: #009FE4; }
+            background-color: #009fe4; }
           @media screen and (min-width: 1024px) {
             body .hero-container .iconSection .iconDiv .iconText {
               font-size: 1.25rem;

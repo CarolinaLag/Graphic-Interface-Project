@@ -2,18 +2,14 @@
 
 _A graphical interface design assignment to follow the graphical guidelines of Folksam and create a campaign page for the summer_
 
-Examples of functionality of the page/design is:
+Examples of functionality/description of the page/design is:
 
 - Animated elements with Javascript
-- Create and implement a SVG-image
+- Create/implement SVG-images
 - Use an image that follows the image manner/language defined in the graphical
   profile
 - Implement a web font from a service such as Google
-- Follow the graphical guidelines
-- Should be "pixel perfect"
-- Sort the products by price 
-- The page/material should be fast-charged and optimized
-- The page/material should be accessibility adapted
+- Use the right tools for editing images such as Adobe Photoshop/Illustrator
 
 ---
 
