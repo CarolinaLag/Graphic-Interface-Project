@@ -1,25 +1,12 @@
-# Graphical Interface Design 
+# Graphical Interface Design - Folksam
 
-_A graphical interface design assignment to follow the graphical guidelines and create a campaign page for Folksam_
+_A graphical interface design assignment to follow the graphical guidelines and create a campaign page for Folksam built with HTML, SCSS and the javascript animation library GSAP_
 
-Examples of functionality/description of the page/design is:
-
-- Animated elements with Javascript
-- Create/implement SVG-images
-- Use an image that follows the image manner/language defined in the graphical
-  profile
-- Implement a web font from a service such as Google
-- Use the right tools for editing images such as Adobe Photoshop/Illustrator
+## Description
+The assigment was to create "something fun" for a company, of our own choice. Where we needed to follow the companys graphical guidelines. I chose to create a campaign page for the summer for Folksam. 
+Some of the tasks was to animate at least one element, create/implement a svg and use the right tools for editing such as Adobe Photoshop/Illustrator.
 
 ---
-
-## Installation
-Use following command to install:
-
-```
-npm i
-
-```
 
 ## Dependencies
 - gulp
@@ -30,8 +17,17 @@ npm i
 - gulp-minify
 - gulp-htmlmin
 
+## Installation
+
+```
+git clone https://github.com/CarolinaLag/Graphic-Interface-Project.git
+
+npm i
+
+```
+
 ## How to run
-- Clone the repo and start `index.html`
+- Start `index.html`
 - Run `gulp` in the terminal 
 
 ## Naming conventions
