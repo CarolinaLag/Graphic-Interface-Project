@@ -56,7 +56,7 @@ window.addEventListener("load", function () {
       duration: 4,
       ease: Power2.easeInOut,
       yoyo: true,
-      x: 400,
+      x: 300,
       rotation: 360,
       repeat: -1,
     });
