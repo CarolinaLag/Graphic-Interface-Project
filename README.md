@@ -1,6 +1,6 @@
 # Graphical Interface Design 
 
-_A graphical interface design assignment to follow the graphical guidelines of Folksam and create a campaign page for the summer_
+_A graphical interface design assignment to follow the graphical guidelines and create a campaign page for Folksam_
 
 Examples of functionality/description of the page/design is:
 

@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   const mq = window.matchMedia("(max-width: 600px)");
   const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-  
+
   let carAnimation = TweenMax.to("#car", 1, {
     x: 20,
     repeat: 10,
@@ -38,7 +38,6 @@ window.addEventListener("load", function () {
     boatAnimation.kill();
   }
 
- 
   if (mq.matches) {
     let suitecaseAnimation = gsap.to("#suitecase", {
       duration: 4,
@@ -70,20 +69,18 @@ const windowColors = ["rgb(241, 250, 123)", "rgb(255, 255, 255)"];
 let currentColor = 0;
 const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-   changeWindowColor = () => {
-    let changeWindowColorAnimation = gsap.to(".window", {
-      fill: windowColors[currentColor],
-      duration: 1,
-      onComplete: changeWindowColor,
-    });
-    currentColor++;
-    if (currentColor > windowColors.length - 1) {
-      currentColor = 0;
-    }
-    if (!mediaQuery || mediaQuery.matches) {
-      changeWindowColorAnimation.kill();
-    }
-  };
-  changeWindowColor();
-
-  
+changeWindowColor = () => {
+  let changeWindowColorAnimation = gsap.to(".window", {
+    fill: windowColors[currentColor],
+    duration: 1,
+    onComplete: changeWindowColor,
+  });
+  currentColor++;
+  if (currentColor > windowColors.length - 1) {
+    currentColor = 0;
+  }
+  if (!mediaQuery || mediaQuery.matches) {
+    changeWindowColorAnimation.kill();
+  }
+};
+changeWindowColor();

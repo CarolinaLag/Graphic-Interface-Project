@@ -19,9 +19,19 @@ body {
           width: 18%; } }
   body header .inputButtonSection {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    position: static;
     padding: 10px;
     font-size: 0.875rem; }
+    @media screen and (min-width: 1024px) {
+      body header .inputButtonSection {
+        display: flex;
+        position: absolute;
+        top: 28px;
+        right: 150px;
+        z-index: 1; } }
     body header .inputButtonSection label {
       color: #007ac4;
       font-size: 1rem;
