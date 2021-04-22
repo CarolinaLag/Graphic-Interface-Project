@@ -32,13 +32,6 @@ body {
         top: 28px;
         right: 150px;
         z-index: 1; } }
-    body header .inputButtonSection label {
-      color: #007ac4;
-      font-size: 1rem;
-      font-weight: 600; }
-      @media screen and (min-width: 1024px) {
-        body header .inputButtonSection label {
-          font-size: 1rem; } }
     body header .inputButtonSection .searchInput {
       padding: 0.375rem 1.5rem 0.375rem;
       width: 150px;
