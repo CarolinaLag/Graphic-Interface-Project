@@ -73,14 +73,14 @@ body {
   body nav .menu {
     display: block;
     position: absolute;
-    top: 31px;
+    top: 24px;
     right: 50px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none; }
     @media screen and (min-width: 1024px) {
       body nav .menu {
-        top: 50px; } }
+        top: 40px; } }
     body nav .menu .hamburgerIcon {
       cursor: pointer; }
   body .hero-container {
@@ -108,7 +108,7 @@ body {
           color: white;
           font-weight: 600;
           font-size: 1.125rem;
-          padding: 0.375rem 1.875rem 0.4375rem;
+          padding: 0.575rem 1.875rem 0.5375rem;
           background-color: #007ac4;
           border-radius: 25px;
           text-align: center;
@@ -118,7 +118,7 @@ body {
           @media screen and (min-width: 1024px) {
             body .hero-container .iconSection .iconDiv .iconText {
               font-size: 1.25rem;
-              padding: 0.4375rem 2.5rem 0.5rem; } }
+              padding: 0.6375rem 2.5rem 0.6rem; } }
     body .hero-container .mainHeading {
       display: flex;
       align-items: center;
@@ -139,7 +139,7 @@ body {
       align-items: center;
       padding: 20px 20px 50px 20px; }
       body .hero-container .insuranceBtnSection .insuranceBtn {
-        padding: 0.375rem 1.875rem 0.4375rem;
+        padding: .575rem 1.875rem .5375rem;
         background-color: #c9dc18;
         border-radius: 25px;
         color: #326321;
@@ -152,7 +152,7 @@ body {
         @media screen and (min-width: 1024px) {
           body .hero-container .insuranceBtnSection .insuranceBtn {
             font-size: 1.25rem;
-            padding: 0.4375rem 2.5rem 0.5rem; } }
+            padding: .7375rem 2.5rem .7rem; } }
 
 @media (prefers-color-scheme: dark) {
   header {
