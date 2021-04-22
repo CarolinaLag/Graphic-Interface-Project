@@ -10,10 +10,6 @@ window.addEventListener("load", function () {
     repeat: -1,
   });
 
-  if (!mediaQuery || mediaQuery.matches) {
-    carAnimation.kill();
-  }
-
   let windowScaleAnimation = TweenMax.to(".window", {
     scaleX: 1.2,
     scaleY: 1.2,
@@ -21,10 +17,6 @@ window.addEventListener("load", function () {
     duration: 1,
     repeat: -1,
   });
-
-  if (!mediaQuery || mediaQuery.matches) {
-    windowScaleAnimation.kill();
-  }
 
   let boatAnimation = TweenMax.to("#boat", 1, {
     y: "20",
@@ -35,6 +27,8 @@ window.addEventListener("load", function () {
   });
 
   if (!mediaQuery || mediaQuery.matches) {
+    carAnimation.kill();
+    windowScaleAnimation.kill();
     boatAnimation.kill();
   }
 
@@ -43,7 +37,7 @@ window.addEventListener("load", function () {
       duration: 4,
       ease: Power2.easeInOut,
       yoyo: true,
-      x: 100,
+      x: 40,
       rotation: 360,
       repeat: -1,
     });
