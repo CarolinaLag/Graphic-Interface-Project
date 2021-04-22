@@ -28,7 +28,6 @@ npm i
 
 ## How to run
 - Start `index.html`
-- Run `gulp` in the terminal 
 
 ## Naming conventions
 
