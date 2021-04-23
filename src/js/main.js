@@ -11,11 +11,11 @@ window.addEventListener("load", function () {
   });
 
   let windowScaleAnimation = TweenMax.to(".window", {
+    delay: 1,
     scaleX: 1.2,
     scaleY: 1.2,
     yoyo: true,
     duration: 1,
-    delay: 2,
     repeat: -1,
   });
 
@@ -60,7 +60,7 @@ window.addEventListener("load", function () {
   }
 });
 
-const windowColors = ["rgb(241, 250, 123)", "rgb(255, 255, 255)"];
+const windowColors = ["rgb(255, 255, 255)", "rgb(241, 250, 123)"];
 let currentColor = 0;
 const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
