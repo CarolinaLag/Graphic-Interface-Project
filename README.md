@@ -5,6 +5,7 @@ _A graphical interface design assignment to follow the graphical guidelines and 
 ## Description
 The assigment was to create "something fun" for a company, of our own choice. Where we needed to follow the companys graphical guidelines. I chose to create a campaign page for the summer for Folksam. 
 Some of the tasks was to animate at least one element, create/implement a svg and overall make the website accessibility adapted and use the right tools for editing images such as Adobe Photoshop/Illustrator.
+There are also options to stop the animations through the prefers-reduced-motion - reduce and also choose a dark theme on the page through prefers-color-scheme - dark. 
 
 ---
 
