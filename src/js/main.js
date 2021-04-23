@@ -15,6 +15,7 @@ window.addEventListener("load", function () {
     scaleY: 1.2,
     yoyo: true,
     duration: 1,
+    delay: 2,
     repeat: -1,
   });
 
