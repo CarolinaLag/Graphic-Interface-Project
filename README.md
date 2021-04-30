@@ -2,6 +2,10 @@
 
 _A graphical interface design assignment to follow the graphical guidelines and create a campaign page for Folksam built with HTML, SCSS and the javascript animation library GSAP_
 
+## Demo
+
+https://graphicdesignfolksam.netlify.app/
+
 ## Description
 The assigment was to create "something fun" for a company, of our own choice. Where we needed to follow the companys graphical guidelines. I chose to create a campaign page for the summer for Folksam. 
 Some of the tasks was to animate at least one element, create/implement a svg and overall make the website accessibility adapted and use the right tools for editing images such as Adobe Photoshop/Illustrator.
