@@ -16,7 +16,7 @@ gulp.task("scss-items", function () {
 });
 
 gulp.task('minify-html', function() {
-  return gulp.src('public/*.html')
+  return gulp.src('index.html')
   .pipe(htmlmin({ collapseWhitespace: true}))
   .pipe(gulp.dest('dist'));
   });
@@ -29,7 +29,7 @@ gulp.task('minify-html', function() {
 
 gulp.task("watch-scss", function() {
   gulp.watch("src/scss/*.scss", gulp.series("scss-items"));
-  gulp.watch("public/*.html", gulp.series("minify-html"));
+  gulp.watch("index.html", gulp.series("minify-html"));
   gulp.watch("src/js/main.js", gulp.series("minify-js"));
 });
 
