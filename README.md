@@ -7,16 +7,9 @@ The assigment was to create "something fun" for a company, of our own choice. Wh
 Some of the tasks was to animate at least one element, create/implement a svg and overall make the website accessibility adapted and use the right tools for editing images such as Adobe Photoshop/Illustrator.
 There are also options to stop the animations through the prefers-reduced-motion - reduce and also choose a dark theme on the page through prefers-color-scheme - dark. 
 
----
+<img width="521" alt="Picture of Decorative Webshop Landingpage" src="https://user-images.githubusercontent.com/69104443/116687222-1ddb0600-a9b5-11eb-9ece-6c665463c417.png" />
 
-## Dependencies
-- gulp
-- gulp-sass
-- gulp-cli
-- gulp-csso
-- gulp-rename
-- gulp-minify
-- gulp-htmlmin
+---
 
 ## Installation
 
@@ -29,19 +22,6 @@ npm i
 
 ## How to run
 - Start `index.html`
-
-## Naming conventions
-
-### Variables
-
-- Use let or const instead of var
-- When naming variables use **camelCase**
-
-* Eg ` let currentColor = 0 `
-
-### Functions
-
-- Function names should use _camelCase_
 
 ## Project structure
 
